@@ -1,0 +1,235 @@
+/* PeruviamSolution.css */
+:root {
+  --primary-blue: #1a4b8c;
+  --secondary-blue: #3a7bc8;
+  --light-blue: #e6f0fa;
+  --accent-gold: #d4af37;
+  --dark-gray: #2c3e50;
+  --light-gray: #ecf0f1;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--dark-gray);
+  background-color: var(--light-gray);
+}
+
+.peruviam-solution {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--white);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.solution-header {
+  text-align: center;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+  color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.solution-header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-top: 0.5rem;
+}
+
+h2 {
+  color: var(--primary-blue);
+  border-bottom: 2px solid var(--accent-gold);
+  padding-bottom: 0.5rem;
+  margin: 2rem 0 1.5rem;
+  font-size: 1.8rem;
+}
+
+h3 {
+  color: var(--secondary-blue);
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.stat-card {
+  background-color: var(--light-blue);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+  border-left: 4px solid var(--accent-gold);
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-blue);
+  margin: 0.5rem 0;
+}
+
+.chart-container {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+  border: 1px solid var(--light-blue);
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.cause-effect, .pareto-chart {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ishikawa-diagram {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.main-bone {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 70%;
+  height: 2px;
+  background-color: var(--dark-gray);
+  transform: translate(-50%, -50%);
+}
+
+.category {
+  position: absolute;
+  padding: 0.5rem;
+  background-color: var(--light-blue);
+  border-radius: 4px;
+  font-weight: bold;
+  color: var(--primary-blue);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pdca-cycle {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.phase {
+  padding: 1.5rem;
+  border-radius: 8px;
+  color: var(--white);
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.phase h3 {
+  color: var(--white);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.phase p {
+  margin: 0.5rem 0;
+}
+
+.plan { background-color: #4e79a7; }
+.do { background-color: #f28e2b; }
+.check { background-color: #e15759; }
+.act { background-color: #76b7b2; }
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.benefit-card {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border-top: 4px solid var(--accent-gold);
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-card .icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.solution-footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--light-blue);
+  color: var(--dark-gray);
+}
+
+@media (max-width: 768px) {
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+  
+  .pdca-cycle {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .solution-header h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .pdca-cycle {
+    grid-template-columns: 1fr;
+  }
+}
+
