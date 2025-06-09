@@ -237,7 +237,79 @@ const PeruviamSolution = () => {
           </div>
         </div>
       </section>
-      
+      <section className="peruvian-fishbone">
+      <header className="peruvian-fishbone__header">
+        <h1 className="peruvian-fishbone__title">Análisis de Variabilidad en % Alcohol</h1>
+        <p className="peruvian-fishbone__subtitle">Cervecería PERUVIAM - Control de Calidad</p>
+      </header>
+
+      <div className="peruvian-fishbone__container">
+        {/* Cabeza del pez */}
+        <div className="peruvian-fishbone__head">
+          <div className="peruvian-fishbone__problem">
+            <span>⚠️</span>
+            <h3>Rango inaceptable: 4.6% - 5.3%</h3>
+          </div>
+        </div>
+
+        {/* Espina central */}
+        <div className="peruvian-fishbone__spine"></div>
+
+        {/* Ramas de causas */}
+        <div className="peruvian-fishbone__branches">
+          {/* Materias Primas */}
+          <div className="peruvian-fishbone__branch peruvian-fishbone__branch--materials">
+            <h4 className="peruvian-fishbone__branch-title">Materias Primas</h4>
+            <ul className="peruvian-fishbone__cause-list">
+              <li className="peruvian-fishbone__cause-item">Variación en maltas</li>
+              <li className="peruvian-fishbone__cause-item">Lúpulo inconsistente</li>
+              <li className="peruvian-fishbone__cause-item">Agua no tratada</li>
+            </ul>
+          </div>
+
+          {/* Métodos */}
+          <div className="peruvian-fishbone__branch peruvian-fishbone__branch--methods">
+            <h4 className="peruvian-fishbone__branch-title">Métodos</h4>
+            <ul className="peruvian-fishbone__cause-list">
+              <li className="peruvian-fishbone__cause-item">Fermentación no estandar</li>
+              <li className="peruvian-fishbone__cause-item">Tiempos variables</li>
+            </ul>
+          </div>
+
+          {/* Personal */}
+          <div className="peruvian-fishbone__branch peruvian-fishbone__branch--personnel">
+            <h4 className="peruvian-fishbone__branch-title">Personal</h4>
+            <ul className="peruvian-fishbone__cause-list">
+              <li className="peruvian-fishbone__cause-item">Falta capacitación</li>
+              <li className="peruvian-fishbone__cause-item">Rotación frecuente</li>
+            </ul>
+          </div>
+
+          {/* Maquinaria */}
+          <div className="peruvian-fishbone__branch peruvian-fishbone__branch--machinery">
+            <h4 className="peruvian-fishbone__branch-title">Maquinaria</h4>
+            <ul className="peruvian-fishbone__cause-list">
+              <li className="peruvian-fishbone__cause-item">Equipos descalibrados</li>
+              <li className="peruvian-fishbone__cause-item">Mantenimiento reactivo</li>
+            </ul>
+          </div>
+
+          {/* Ambiente */}
+          <div className="peruvian-fishbone__branch peruvian-fishbone__branch--environment">
+            <h4 className="peruvian-fishbone__branch-title">Ambiente</h4>
+            <ul className="peruvian-fishbone__cause-list">
+              <li className="peruvian-fishbone__cause-item">Temperatura fluctuante</li>
+              <li className="peruvian-fishbone__cause-item">Humedad variable</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Cola del pez */}
+        <div className="peruvian-fishbone__tail"></div>
+      </div>
+
+    </section>
+  
 
       <footer className="solution-footer">
         <p>© {new Date().getFullYear()} Propuesta de Calidad Total - PERUVIAM</p>

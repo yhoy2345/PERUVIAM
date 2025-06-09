@@ -233,3 +233,223 @@ h3 {
   }
 }
 
+/* PeruvianFishbone.css */
+
+/* Estructura principal */
+.peruvian-fishbone {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.peruvian-fishbone__header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.peruvian-fishbone__title {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.peruvian-fishbone__subtitle {
+  color: #7f8c8d;
+  font-size: 1rem;
+}
+
+/* Contenedor del diagrama */
+.peruvian-fishbone__container {
+  position: relative;
+  height: 500px;
+  margin: 40px 0;
+}
+
+/* Cabeza del pez */
+.peruvian-fishbone__head {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 80px;
+  background: #e74c3c;
+  border-radius: 50% 0 0 50%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.peruvian-fishbone__problem {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 140px;
+}
+
+.peruvian-fishbone__problem h3 {
+  color: #c0392b;
+  font-size: 1rem;
+  margin: 5px 0 0;
+}
+
+/* Espina central */
+.peruvian-fishbone__spine {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  width: 80%;
+  height: 3px;
+  background: #2c3e50;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* Ramas */
+.peruvian-fishbone__branches {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.peruvian-fishbone__branch {
+  position: absolute;
+  width: 160px;
+}
+
+.peruvian-fishbone__branch-title {
+  color: #2980b9;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  padding-left: 5px;
+  border-left: 3px solid #3498db;
+}
+
+.peruvian-fishbone__cause-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.peruvian-fishbone__cause-item {
+  font-size: 0.85rem;
+  padding: 5px 8px;
+  margin-bottom: 3px;
+  background: #f8f9fa;
+  border-radius: 3px;
+}
+
+/* Posicionamiento ramas */
+.peruvian-fishbone__branch--materials {
+  top: 0%;
+  left: 50%;
+}
+.peruvian-fishbone__branch--materials::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100px;
+  height: 2px;
+  background: #3498db;
+  transform: rotate(-25deg);
+  transform-origin: left;
+  z-index: -1;
+}
+
+.peruvian-fishbone__branch--methods {
+  top: 20%;
+  left: 25%;
+}
+.peruvian-fishbone__branch--methods::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100px;
+  height: 2px;
+  background: #3498db;
+  transform: rotate(-15deg);
+  transform-origin: left;
+  z-index: -1;
+}
+
+.peruvian-fishbone__branch--personnel {
+  top: 50%;
+  left: 25%;
+}
+.peruvian-fishbone__branch--personnel::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100px;
+  height: 2px;
+  background: #3498db;
+  transform: rotate(-5deg);
+  transform-origin: left;
+  z-index: -1;
+}
+
+.peruvian-fishbone__branch--machinery {
+  top: 65%;
+  left: 50%;
+}
+.peruvian-fishbone__branch--machinery::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100px;
+  height: 2px;
+  background: #3498db;
+  transform: rotate(15deg);
+  transform-origin: left;
+  z-index: -1;
+}
+
+.peruvian-fishbone__branch--environment {
+  top: 80%;
+  left: 75%;
+}
+.peruvian-fishbone__branch--environment::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100px;
+  height: 2px;
+  background: #3498db;
+  transform: rotate(25deg);
+  transform-origin: left;
+  z-index: -1;
+}
+
+/* Cola del pez */
+.peruvian-fishbone__tail {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 60px solid #2c3e50;
+  z-index: 5;
+}
+
+/* Pie de página */
+.peruvian-fishbone__footer {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #ecf0f1;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
